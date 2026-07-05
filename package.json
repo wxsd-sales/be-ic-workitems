@@ -1,0 +1,23 @@
+{
+  "name": "be-ic-work-items",
+  "version": "1.0.0",
+  "description": "Backend for Instant Connect integration into WxCC (Through Work Items AKA Task Routing API)",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "run": "node server.js",
+    "dev": "nodemon server.js"
+  },
+
+  "author": "vvazquez@cisco.com",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
