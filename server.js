@@ -200,9 +200,9 @@ app.post('/api/start-session', startSessionPerIpLimit, startSessionGlobalLimit, 
 // Health check endpoint - used to verify the server is running
 app.get('/api/health', (_req, res) => {
     console.log("[Backend] Health Check endpoint hit");
-    res.json({ status: 'OK' });
+    res.json({ status: 'OK', node: process.version });
 });
 
 app.listen(port, () => {
-    console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port} (Node ${process.version})`);
 });
