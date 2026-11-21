@@ -16,6 +16,7 @@ const allowedOrigins = (process.env.ALLOWED_ORIGINS || 'http://localhost:5500,ht
     .split(',')
     .map(o => o.trim())
     .filter(Boolean);
+console.log('[Backend] CORS allowed origins:', allowedOrigins);
 
 app.use(cors({
     origin: (origin, callback) => {
